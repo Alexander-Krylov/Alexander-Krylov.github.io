@@ -1,0 +1,340 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@trio-skill: url('../img/sprite.png');
+
+h1 {
+	font-size: 70px;
+	padding: 30px 50px;
+}
+
+h2 {
+	width: 90%;
+	margin-left: 5%;
+	font-size: 35px;
+	font-weight: 900;
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: 100;
+}
+
+p {
+	font-size: 22px;
+}
+
+body {
+	background-color: #b2dfdb;
+	font-family: 'Oswald', sans-serif;
+}
+
+.container {
+	display: block;
+	width: 70%;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+header .page-header {
+	background-color: #0277bd;
+	box-shadow: 0px 5px 1px 0 #004c8c;
+	margin-bottom: 40px;
+	padding: 40px 0;
+
+	.title {
+		text-align: center;
+		transition: all .3s ease-in-out;
+		box-shadow: 5px 5px 1px 0 #004c8c;
+		background-color: #58a5f0;
+
+		&:hover {
+			transform: translateY(-15px);
+			box-shadow: 15px 20px 1px 0 #004c8c;
+		}
+
+		h1 {
+			font-family: 'Anton', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 0.15em;
+			color: white;
+			text-shadow: 2px 2px 1px #004c8c;
+		}
+	}
+}
+
+
+main .page-main {
+
+	h3 {
+		font-weight: bold;
+	}
+
+	li {
+		list-style: none;
+		padding-bottom: 30px;
+
+		&:last-child {
+			padding-bottom: 50px;
+		}
+	}
+
+	.main-block {
+		margin-bottom: 40px;
+		padding-top: 30px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		background-color: #e5ffff;
+		color: #004d40;
+		box-shadow: 5px 5px 1px 0 #82b3c9;
+	}
+
+	.about{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-top: 0;
+		padding: 0;
+		box-sizing: border-box;
+
+		.photo {
+			display: block;
+			margin: 0 auto;
+			flex: 1 1 250px;
+
+			img{
+				display: block;
+				max-width: 100%;
+				width: 400px;
+			}
+		}	
+
+		.description {
+			display: block;
+			flex: 3 1 250px;
+
+			ul {
+				margin: 0 20px;
+				margin-top: 10px;
+
+				h2{
+					margin:0;
+				}
+
+				li {
+					margin-top: 20px;
+					padding: 0;
+				}
+			}
+		}	
+	}
+
+	.skill-box {
+		width: 90%;
+		min-height: 80px;
+		border-bottom: 2px solid #888;
+		margin: 0 auto;
+		padding: 15px 0;
+	}
+
+	.skills {
+
+		li {
+
+			h3 {
+				margin-bottom: 15px;
+			}
+
+			.skill-bar {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 40px;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				border-radius: 5px;
+				background-color: #eee;
+				transition: 0.4s linear;
+				transition-property: width, background-color;
+				margin-bottom: 25px;
+
+				&::after{
+					filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.5));
+				}
+			}
+
+			.skillbar-bar {
+				height: 40px;
+				width: 0;
+				border-radius: 5px;
+			}
+
+			.skillbar-percent {
+				position: absolute;
+				right: 10px;
+				top: 0;
+				font-size: 20px;
+				height: 40px;
+				line-height: 40px;
+			}
+		}
+	}
+}
+
+footer {
+
+	background-color: #0277bd;
+	height: 120px;
+
+	.page-footer {
+		.footer-social {
+			padding-top: 30px;
+		}
+
+		.social-btn {
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			margin-right: 10px;
+			vertical-align: middle;
+			color: #ffffff;
+			background-image: url("../img/social-sprite.png");
+			background-repeat: no-repeat;
+			border: 1px solid rgba(255, 255, 255, 0.1);
+		}
+
+		.vk {
+			background-position: 22px 20px;
+		}
+
+		.fb {
+			background-position: 24px -41px;
+		}
+
+		.ins {
+			background-position: 18px -100px;
+		}
+
+		.social-btn:hover {
+			border-color: rgba(255, 255, 255, 0.6);
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	h1 {
+		font-size: 60px;
+		padding: 20px 35px;
+	}
+
+	h2 {
+		font-size: 27px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 17px;
+	}
+
+	main .page-main {
+		.about {
+			.photo {
+				flex-grow: 3;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 40px;
+		padding: 15px 25px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	main .page-main {
+		.about {
+			flex-direction: column;
+		}
+	}
+}
+
+// div.html-skill::after{
+// 	content: "";
+// 	top: 0;
+//     left: -200px;
+//     position: absolute;
+// 	width: 152px;
+// 	height: 175px;
+// 	background: @trio-skill no-repeat;
+// }
+
+// div.css-skill::after{
+// 	content: "";
+// 	top: 0;
+//     left: -200px;
+//     position: absolute;
+// 	width: 152px;
+// 	height: 175px;
+// 	background: @trio-skill no-repeat -201px 0;
+// }
+
+// div.js-skill::after{
+// 	content: "";
+// 	top: 0;
+//     left: -200px;
+//     position: absolute;
+// 	width: 152px;
+// 	height: 175px;
+// 	background: @trio-skill no-repeat -402px 0;
+// }
+
+// div.jq-skill::after{
+// 	content: "";
+// 	top: 0;
+//     left: -200px;
+//     position: absolute;
+// 	width: 152px;
+// 	height: 175px;
+// 	background: url('../img/jquery-icon.png') no-repeat;
+// }
+
+// div.less-skill::after{
+// 	content: "";
+// 	top: 0;
+//     left: -200px;
+//     position: absolute;
+// 	width: 152px;
+// 	height: 175px;
+// 	background: url('../img/less.png') no-repeat;
+// }
