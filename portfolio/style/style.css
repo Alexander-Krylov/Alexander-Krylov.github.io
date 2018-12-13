@@ -29,6 +29,9 @@ body {
   min-width: 400px;
   margin: 0 auto;
 }
+.skill-progress {
+  margin-left: 15%;
+}
 header .page-header {
   background-color: #0277bd;
   box-shadow: 0px 5px 1px 0 #004c8c;
@@ -75,7 +78,6 @@ main .page-main .about {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  flex-wrap: wrap;
   margin-top: 0;
   padding: 0;
   box-sizing: border-box;
@@ -83,16 +85,14 @@ main .page-main .about {
 main .page-main .about .photo {
   display: block;
   margin: 0 auto;
-  flex: 1 1 250px;
+  width: 350px;
 }
 main .page-main .about .photo img {
   display: block;
-  max-width: 100%;
-  width: 400px;
+  width: 350px;
 }
 main .page-main .about .description {
   display: block;
-  flex: 3 1 250px;
 }
 main .page-main .about .description ul {
   margin: 0 20px;
@@ -107,8 +107,9 @@ main .page-main .about .description ul li {
 }
 main .page-main .skill-box {
   width: 90%;
+  position: relative;
   min-height: 80px;
-  border-bottom: 2px solid #888;
+  border-bottom: 2px solid #004d40;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -179,34 +180,28 @@ footer .page-footer .social-btn:hover {
     font-size: 60px;
     padding: 20px 35px;
   }
-  h2 {
-    font-size: 27px;
-  }
-  h3 {
-    font-size: 22px;
-  }
-  p {
-    font-size: 17px;
-  }
-  main .page-main .about .photo {
-    flex-grow: 3;
+  div.skill-progress {
+    margin-left: 18%;
   }
 }
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 25px;
+    font-size: 28px;
   }
   h3 {
-    font-size: 22px;
+    font-size: 25px;
   }
   p {
-    font-size: 16px;
+    font-size: 20px;
   }
   .container {
     width: 80%;
+  }
+  div.skill-progress {
+    margin-left: 20%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -214,9 +209,67 @@ footer .page-footer .social-btn:hover {
     font-size: 40px;
     padding: 15px 25px;
   }
-}
-@media screen and (max-width: 420px) {
-  main .page-main .about {
+  main .page-main div.about {
     flex-direction: column;
+    padding-top: 30px;
   }
+  main .page-main div.about div.photo img {
+    width: 600px;
+    max-width: 100%;
+  }
+  main .page-main div.skill-progress {
+    margin-left: 30%;
+  }
+  main .page-main div.skill-progress .skillbar-percent {
+    right: 5px;
+  }
+}
+div.html-skill::after {
+  content: "";
+  top: 20px;
+  left: 0;
+  position: absolute;
+  width: 102px;
+  height: 120px;
+  background: url('../img/min-sprite.png') no-repeat;
+}
+div.css-skill::after {
+  content: "";
+  top: 20px;
+  left: 0;
+  position: absolute;
+  width: 102px;
+  height: 120px;
+  background: url('../img/min-sprite.png') no-repeat;
+  background-position: -133px 0;
+}
+div.js-skill::after {
+  content: "";
+  top: 20px;
+  left: 0;
+  position: absolute;
+  width: 102px;
+  height: 120px;
+  background: url('../img/min-sprite.png') no-repeat;
+  background-position: -267px 0;
+}
+div.jq-skill::after {
+  content: "";
+  top: 20px;
+  left: 0;
+  position: absolute;
+  width: 102px;
+  height: 120px;
+  background: url('../img/min-sprite.png') no-repeat;
+  background: url('../img/jquery-icon.png') no-repeat;
+}
+div.less-skill::after {
+  content: "";
+  top: 20px;
+  left: 0;
+  position: absolute;
+  width: 102px;
+  height: 120px;
+  background: url('../img/min-sprite.png') no-repeat;
+  background: url('../img/less.png') no-repeat;
 }

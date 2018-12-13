@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-@trio-skill: url('../img/sprite.png');
+@trio-skill: url('../img/min-sprite.png');
 
 h1 {
 	font-size: 70px;
@@ -36,6 +36,10 @@ body {
 	width: 70%;
 	min-width: 400px;
 	margin: 0 auto;
+}
+
+.skill-progress {
+	margin-left: 15%;
 }
 
 header .page-header {
@@ -95,7 +99,6 @@ main .page-main {
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
-		flex-wrap: wrap;
 		margin-top: 0;
 		padding: 0;
 		box-sizing: border-box;
@@ -103,18 +106,16 @@ main .page-main {
 		.photo {
 			display: block;
 			margin: 0 auto;
-			flex: 1 1 250px;
+			width: 350px;
 
 			img{
 				display: block;
-				max-width: 100%;
-				width: 400px;
+				width: 350px
 			}
 		}	
 
 		.description {
 			display: block;
-			flex: 3 1 250px;
 
 			ul {
 				margin: 0 20px;
@@ -134,8 +135,9 @@ main .page-main {
 
 	.skill-box {
 		width: 90%;
+		position: relative;
 		min-height: 80px;
-		border-bottom: 2px solid #888;
+		border-bottom: 2px solid #004d40;
 		margin: 0 auto;
 		padding: 15px 0;
 	}
@@ -230,48 +232,48 @@ footer {
 		padding: 20px 35px;
 	}
 
-	h2 {
-		font-size: 27px;
+	div.skill-progress {
+		margin-left: 18%;
 	}
 
-	h3 {
-		font-size: 22px;
-	}
+	// h2 {
+	// 	font-size: 27px;
+	// }
 
-	p {
-		font-size: 17px;
-	}
+	// h3 {
+	// 	font-size: 22px;
+	// }
 
-	main .page-main {
-		.about {
-			.photo {
-				flex-grow: 3;
-			}
-		}
-	}
+	// p {
+	// 	font-size: 17px;
+	// }
 }
 
 @media screen and (max-width: 1024px) {
 	
 	h1 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	h2 {
-		font-size: 25px;
+		font-size: 28px;
 	}
 
 	h3 {
-		font-size: 22px;
+		font-size: 25px;
 	}
 
 	p {
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.container {
 		width: 80%;
 	}
+
+	div.skill-progress {
+		margin-left: 20%;
+	}	
 }
 
 @media screen and (max-width: 768px) {
@@ -279,62 +281,80 @@ footer {
 		font-size: 40px;
 		padding: 15px 25px;
 	}
-}
 
-@media screen and (max-width: 420px) {
 	main .page-main {
-		.about {
+		div.about {
 			flex-direction: column;
+			padding-top: 30px;
+
+			div.photo{
+				img {
+					width: 600px;
+					max-width: 100%;
+				}
+			}
 		}
+
+		div.skill-progress {
+			margin-left: 30%;
+
+			.skillbar-percent {
+				right: 5px;
+			}
+		}	
 	}
 }
 
-// div.html-skill::after{
-// 	content: "";
-// 	top: 0;
-//     left: -200px;
-//     position: absolute;
-// 	width: 152px;
-// 	height: 175px;
-// 	background: @trio-skill no-repeat;
-// }
+div.html-skill::after{
+	content: "";
+	top: 20px;
+    left: 0;
+    position: absolute;
+	width: 102px;
+	height: 120px;
+	background: @trio-skill no-repeat;
+}
 
-// div.css-skill::after{
-// 	content: "";
-// 	top: 0;
-//     left: -200px;
-//     position: absolute;
-// 	width: 152px;
-// 	height: 175px;
-// 	background: @trio-skill no-repeat -201px 0;
-// }
+div.css-skill::after{
+	content: "";
+	top: 20px;
+    left: 0;
+    position: absolute;
+	width: 102px;
+	height: 120px;
+	background: @trio-skill no-repeat;
+	background-position: -133px 0;
+}
 
-// div.js-skill::after{
-// 	content: "";
-// 	top: 0;
-//     left: -200px;
-//     position: absolute;
-// 	width: 152px;
-// 	height: 175px;
-// 	background: @trio-skill no-repeat -402px 0;
-// }
+div.js-skill::after{
+	content: "";
+	top: 20px;
+    left: 0;
+    position: absolute;
+	width: 102px;
+	height: 120px;
+	background: @trio-skill no-repeat;
+	background-position: -267px 0;
+}
 
-// div.jq-skill::after{
-// 	content: "";
-// 	top: 0;
-//     left: -200px;
-//     position: absolute;
-// 	width: 152px;
-// 	height: 175px;
-// 	background: url('../img/jquery-icon.png') no-repeat;
-// }
+div.jq-skill::after{
+	content: "";
+	top: 20px;
+    left: 0;
+    position: absolute;
+	width: 102px;
+	height: 120px;
+	background: @trio-skill no-repeat;
+	background: url('../img/jquery-icon.png') no-repeat;
+}
 
-// div.less-skill::after{
-// 	content: "";
-// 	top: 0;
-//     left: -200px;
-//     position: absolute;
-// 	width: 152px;
-// 	height: 175px;
-// 	background: url('../img/less.png') no-repeat;
-// }
+div.less-skill::after{
+	content: "";
+	top: 20px;
+    left: 0;
+    position: absolute;
+	width: 102px;
+	height: 120px;
+	background: @trio-skill no-repeat;
+	background: url('../img/less.png') no-repeat;
+}
