@@ -28,6 +28,12 @@
 
 @trio-skill: url('../img/min-sprite.png');
 
+a:-webkit-any-link {
+    color: -webkit-link !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 h1 {
 	font-size: 70px;
 	padding: 30px 50px;
@@ -220,7 +226,7 @@ footer {
 		}
 
 		.social-btn {
-			display: block;
+			display: block !important;
 			width: 60px;
 			height: 60px;
 			margin-right: 10px;
@@ -253,41 +259,6 @@ footer {
 			border-color: rgba(255, 255, 255, 0.6);
 			background-color: rgba(255, 255, 255, 0.2);
 		}
-
-		// .social-btn {
-		// 	display: inline-block;
-		// 	width: 60px;
-		// 	height: 60px;
-		// 	margin-right: 10px;
-		// 	vertical-align: middle;
-		// 	color: #ffffff;
-		// 	background-image: url("../img/social-sprite.png");
-		// 	background-repeat: no-repeat;
-		// 	border: 1px solid rgba(255, 255, 255, 0.1);
-		// }
-
-		// .vk {
-		// 	background-position: 22px 20px;
-		// }
-
-		// .fb {
-		// 	background-position: 24px -41px;
-		// }
-
-		// .ins {
-		// 	background-position: 18px -100px;
-		// }
-
-		// .contacts {
-		// 	background-image: url("../img/contacts.png");
-		// 	background-repeat: no-repeat;
-		// 	background-position: 15px 15px;
-		// }
-
-		// .social-btn:hover {
-		// 	border-color: rgba(255, 255, 255, 0.6);
-		// 	background-color: rgba(255, 255, 255, 0.2);
-		// }
 	}
 }
 
