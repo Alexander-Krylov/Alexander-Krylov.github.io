@@ -23,11 +23,6 @@
 .btn-top:hover {
   background-color: #004a3f;
 }
-a:-webkit-any-link {
-  color: -webkit-link !important;
-  cursor: pointer;
-  text-decoration: underline;
-}
 h1 {
   font-size: 70px;
   padding: 30px 50px;
@@ -174,12 +169,12 @@ footer {
   background-color: #0277bd;
   height: 120px;
 }
-footer .page-footer .footer-social {
+footer .page-footer .footer-soc {
   display: flex;
   flex-direction: row;
   padding-top: 30px;
 }
-footer .page-footer .social-btn {
+footer .page-footer .soc-butt {
   display: block !important;
   width: 60px;
   height: 60px;
@@ -204,7 +199,7 @@ footer .page-footer .contacts {
   background-repeat: no-repeat;
   background-position: 15px 15px;
 }
-footer .page-footer .social-btn:hover {
+footer .page-footer .soc-butt:hover {
   border-color: rgba(255, 255, 255, 0.6);
   background-color: rgba(255, 255, 255, 0.2);
 }
