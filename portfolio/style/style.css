@@ -170,6 +170,7 @@ footer {
   height: 120px;
 }
 footer .page-footer .footer-social {
+  display: block;
   padding-top: 30px;
 }
 footer .page-footer .social-btn {
