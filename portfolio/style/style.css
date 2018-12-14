@@ -2,6 +2,27 @@
   margin: 0;
   padding: 0;
 }
+.btn-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: 1px solid white;
+  outline: none;
+  background-color: #007769;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.btn-top:hover {
+  background-color: #004a3f;
+}
 h1 {
   font-size: 70px;
   padding: 30px 50px;
@@ -171,6 +192,11 @@ footer .page-footer .fb {
 footer .page-footer .ins {
   background-position: 18px -100px;
 }
+footer .page-footer .contacts {
+  background-image: url("../img/contacts.png");
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
 footer .page-footer .social-btn:hover {
   border-color: rgba(255, 255, 255, 0.6);
   background-color: rgba(255, 255, 255, 0.2);
@@ -197,6 +223,11 @@ footer .page-footer .social-btn:hover {
   p {
     font-size: 20px;
   }
+  .btn-top {
+    font-size: 15px;
+    bottom: 20px;
+    right: 20px;
+  }
   .container {
     width: 80%;
   }
@@ -208,6 +239,9 @@ footer .page-footer .social-btn:hover {
   h1 {
     font-size: 40px;
     padding: 15px 25px;
+  }
+  .btn-top {
+    container: vtop;
   }
   main .page-main div.about {
     flex-direction: column;

@@ -3,6 +3,29 @@
 	padding: 0;
 }
 
+.btn-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border: 1px solid white;
+	outline: none;
+	background-color: #007769;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.btn-top:hover{
+	background-color: #004a3f;
+}
+
 @trio-skill: url('../img/min-sprite.png');
 
 h1 {
@@ -68,7 +91,6 @@ header .page-header {
 		}
 	}
 }
-
 
 main .page-main {
 
@@ -219,6 +241,12 @@ footer {
 			background-position: 18px -100px;
 		}
 
+		.contacts {
+			background-image: url("../img/contacts.png");
+			background-repeat: no-repeat;
+			background-position: 15px 15px;
+		}
+
 		.social-btn:hover {
 			border-color: rgba(255, 255, 255, 0.6);
 			background-color: rgba(255, 255, 255, 0.2);
@@ -235,18 +263,6 @@ footer {
 	div.skill-progress {
 		margin-left: 18%;
 	}
-
-	// h2 {
-	// 	font-size: 27px;
-	// }
-
-	// h3 {
-	// 	font-size: 22px;
-	// }
-
-	// p {
-	// 	font-size: 17px;
-	// }
 }
 
 @media screen and (max-width: 1024px) {
@@ -267,6 +283,12 @@ footer {
 		font-size: 20px;
 	}
 
+	.btn-top {
+		font-size: 15px;
+		bottom: 20px;
+		right: 20px;
+	}
+
 	.container {
 		width: 80%;
 	}
@@ -280,6 +302,10 @@ footer {
 	h1 {
 		font-size: 40px;
 		padding: 15px 25px;
+	}
+
+	.btn-top {
+		container: vtop;
 	}
 
 	main .page-main {
