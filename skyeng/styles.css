@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #85A5D4;
+  padding-top: 5%;
+  font-family: Roboto, sans-serif;
+}
+.container {
+  display: block;
+  width: 70%;
+  min-width: 350px;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.container .price-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 25px;
+}
+.container .price-list .price-list-item {
+  width: 33%;
+  min-width: 250px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 25px 0;
+}
+.container .price-list .price-list-item:hover {
+  background-color: #F2F2F1;
+}
+.container .price-list .price-list-item .logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.container .price-list .price-list-item h2 {
+  display: block;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #5572D6;
+  margin: 0 auto;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+.container .price-list .price-list-item .description {
+  display: block;
+  max-width: 60%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ABABAB;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.container .price-list .price-list-item .price {
+  display: block;
+  height: 35px;
+  margin-top: 25px;
+}
+.container .price-list .price-list-item .price p {
+  display: inline-block;
+  font-size: 16px;
+  color: #5572D6;
+  font-weight: 500;
+}
+.container .price-list .price-list-item .price p span.sub {
+  font-size: 35px;
+  font-weight: 700;
+}
+.container .price-list .price-list-item .price p span.sub span.sup {
+  font-size: 16px;
+  vertical-align: super;
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 60%;
+  }
+  .container ul.price-list li.price-list-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+  .container ul.price-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container ul.price-list li.price-list-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .container {
+    width: 80%;
+    min-width: 300px;
+  }
+  .container ul.price-list li.price-list-item {
+    width: 100%;
+    min-width: 200px;
+  }
+}
