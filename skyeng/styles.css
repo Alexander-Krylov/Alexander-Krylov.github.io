@@ -4,7 +4,7 @@
 }
 body {
   background-color: #85A5D4;
-  padding-top: 5%;
+  padding: 5% 0;
   font-family: Roboto, sans-serif;
 }
 .container {
@@ -14,6 +14,7 @@ body {
   min-height: 400px;
   background-color: white;
   border-radius: 5px;
+  box-shadow: 0 12px 45px 0px rgba(0, 0, 0, 0.4);
   margin: 0 auto;
 }
 .container .price-list {
@@ -52,7 +53,7 @@ body {
 }
 .container .price-list .price-list-item .description {
   display: block;
-  max-width: 60%;
+  max-width: 65%;
   font-size: 16px;
   font-weight: 500;
   color: #ABABAB;
