@@ -53,7 +53,7 @@ body {
 }
 .container .price-list .price-list-item .description {
   display: block;
-  max-width: 65%;
+  max-width: 60%;
   font-size: 16px;
   font-weight: 500;
   color: #ABABAB;
