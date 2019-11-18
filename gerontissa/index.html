@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gerontissa</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+</head>
+<body>
+	<header id="header_home">
+		<a href="index.html" id="main_logo_container">
+			<img src="./img/logo.png">
+		</a>
+		<h1>Геронтисса</h1>
+		<nav id="header_nav">
+			<ul id="header_list">
+				<li class="header_list_item"><a class="dymainc_link" href="#">Продукция</a></li>
+				<li class="header_list_item"><a class="dymainc_link" href="#">Производство</a></li>
+				<li class="header_list_item"><a class="dymainc_link" href="#">Полезная информация</a></li>
+				<li class="header_list_item"><a class="dymainc_link" href="#">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main_home">
+
+		<section id="main_picture">
+				<h2 class="section_title">Сделаем жизнь вашего близкого комфортной</h2>
+		</section>
+
+		<section id="production">
+			<div class="production_title_container">
+				<h2 class="section_title">Наша продукция</h2>
+			</div>
+			<div id="production_container">
+				<div class="production_container_item">
+					<div class="product_image_container">
+						<img class="product_image" src="./img/chair_2_1_front.png" alt="стул">
+					</div>
+					<div class="product_description_container moving_right">
+						<h3 class="product_title">Стул не разборный</h3>
+						<p class="product_description">Красивый неразборный стул, предназначен для комфортного сидения максимально долго. Руки прекрасно располагаются на подлокотниках из-за чего отдыхает плечевой сустав и расслабляется спина. Стул предназначен для людей пожилого возраста, но прекрасно подойдет любому поколению, кто ценит удобство и комфорт.</p>
+						<a class="product_more">Подробнее</a>
+					</div>
+				</div>
+				<div class="production_container_item moving_right">
+					<div class="product_image_container">
+						<img class="product_image" src="./img/chair_2_1_front.png" alt="стул">
+					</div>
+					<div class="product_description_container">
+						<h3 class="product_title">Стул разборный </h3>
+						<p class="product_description">Красивый разборный стул, предназначен для комфортного сидения максимально долго. Руки прекрасно располагаются на подлокотниках из-за чего отдыхает плечевой сустав и расслабляется спина. Стул предназначен для людей пожилого возраста, но прекрасно подойдет любому поколению, кто ценит удобство и комфорт.</p>
+						<a class="product_more">Подробнее</a>
+					</div>
+				</div>
+				<div class="production_container_item moving_right">
+					<div class="product_image_container">
+						<img class="product_image" src="./img/chair_1_1_front.png" alt="стул">
+					</div>
+					<div class="product_description_container">
+						<h3 class="product_title">Стул мягкий</h3>
+						<p class="product_description">Красивый мягкий стул, предназначен для комфортного сидения максимально долго. Руки прекрасно располагаются на подлокотниках из-за чего отдыхает плечевой сустав и расслабляется спина. Стул предназначен для людей пожилого возраста, но прекрасно подойдет любому поколению, кто ценит удобство и комфорт.</p>
+						<a class="product_more">Подробнее</a>
+					</div>
+				</div>
+				<div class="production_container_item moving_right">
+					<div class="product_image_container">
+						<img class="product_image" src="./img/table_1_front.png" alt="стол">
+					</div>
+					<div class="product_description_container">
+						<h3 class="product_title">Стол</h3>
+						<p class="product_description">Красивый стол, предназначен для комфортного расположения предметов. Руки прекрасно располагаются на подлокотниках из-за чего отдыхает плечевой сустав и расслабляется спина. Стул предназначен для людей пожилого возраста, но прекрасно подойдет любому поколению, кто ценит удобство и комфорт.</p>
+						<a class="product_more">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<img src="./img/arrow_left.png" alt=">" id="production_arrow_left" class="production_arrow" onclick="showProductionItem(false)">
+			<img src="./img/arrow_right.png" alt=">" id="production_arrow_right" class="production_arrow" onclick="showProductionItem(true)">
+		</section>
+
+		<section id="manufacture">
+			<div class="manufacture_item">
+				<div class="manufacture_description_container">
+					<p class="manufacture_description">Производственная компания «Геронтисса» специализируется на разработке и производстве товаров для людей старшего возраста и людей с различными ограничениями жизнедеятельности. Учитывая специфические особенности наших потребителей, мы проектируем все наши товары с  учётом их особенностей и для достижения максимального жизненного комфорта.</p>
+				</div>
+			</div>
+			<div class="manufacture_item">
+				<div class="manufacture_description_container">
+					<p class="manufacture_description">Основная задача нашей компании - это создание товаров, и в первую очередь мебели, для пожилых людей и людей с ограничениями жизнедеятельности через нахождение оптимального сочетания  природных, экологически чистых материалов и новейших технологий. Ведь ни для кого не секрет, что обычная мебель  и привычные нам предметы быта для этих категорий наших сограждан  не подходят. Они, как правило, не отвечают особенностям их состояний и потребностям, так как изначально рассчитаны на здоровых и активных.</p>
+				</div>
+			</div>
+			<div class="manufacture_item">
+				<div class="manufacture_description_container">
+					<p class="manufacture_description">Так мебель для пожилых людей и людей с ограничениями жизнедеятельности имеет ряд особенностей и, при этом,  должна быть натуральной, «теплой», а также уютной и удобной. Она должна создаваться с учетом всех особенностей этой группы, при этом в обязательном порядке быть безопасной в использовании.</p>
+				</div>
+			</div>
+			<div class="manufacture_item">
+				<div class="manufacture_description_container">
+					<p class="manufacture_description">Все эти условия изначально учитываются нами при разработке каждого нашего продукта, благодаря чему все наши изделия получаются такими удобными в использовании, тактильно приятными и от этого - любимыми.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="information">
+			<div class="information_title_container" style="background-color: #a35638;">
+				<p class="information_title">
+					Готовы вместе с вами разрабатывать и создавать <span class="attention_text">новые элементы</span> мебели и быта  для пожилых людей и  людей с ограничениями жизнедеятельности и при этом от вас достаточно будет <span class="attention_text">только идеи</span>, остальное сделаем мы сами.
+				</p>
+			</div>
+			<div class="information_container container_1">
+					<div class="information_image_container"></div>
+					<div class="information_description_container">
+						<p class="information_description">Благодаря наличию производства в России, производственная компания «Геронтисса» в кратчайшие сроки способна произвести любое количество наших товаров.</p>
+					</div>
+			</div>
+			<div class="information_container container_2">
+					<div class="information_description_container">
+						<p class="information_description">Вы можете заказать нашу продукцию в базовом исполнении. А еще мы можем выполнить индивидуальный продукт по вашим требованиям, вам нужно только указать: <span class="information_description_item">цвет</span>, <span class="information_description_item">размер изделия</span>, <span class="information_description_item">материал</span>. И мы реализуем вашу идею максимально быстро и качественно.</p>
+					</div>
+					<div class="information_image_container"></div>
+			</div>
+			<div class="information_title_container">
+				<p class="information_title">
+					Ведь самое главное, что мы можем подарить нашим любимым и самым родным - это <span class="attention_text">забота</span> и <span class="attention_text">внимание</span>.
+				</p>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footer_home">
+		<h3 class="contacts_title">Наши контакты</h3>
+		<p class="contacts_item">Пн-пт с 9-00 до 18-00</p>
+		<p class="contacts_item">e-mail:  <a class="dymainc_link" href="mailto:opt@gerontissa@ru" class="contacts_link">opt@gerontissa@ru</a></p>
+		<p class="contacts_item">тел. <a class="dymainc_link" href="tel:+79037752016" class="contacts_link">+79037752016</a></p>
+		<p class="contacts_item">Адрес: <a class="dymainc_link" href="https://yandex.ru/maps/213/moscow/?ll=37.589652%2C55.824698&mode=search&sll=36.977631%2C56.185102&sspn=0.123253%2C0.039106&text=%D0%B3.%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9C%D0%B8%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0%2C%20%D0%B4%D0%BE%D0%BC%20%E2%84%96%204%D0%90%2C%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201&z=17" class="contacts_link" target="_blank">127322, г.Москва, ул. Милашенкова, дом № 4А, корпус 1</a></p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
