@@ -12,7 +12,7 @@ function setProductType() {
 	if (mainImageContainer.classList.contains('notfoldchair')) {
 		productName = 'chair_2_';
 	} else if (mainImageContainer.classList.contains('foldchair')) {
-		productName = 'chair_2_';
+		productName = 'chair_3_';
 	} else if (mainImageContainer.classList.contains('softchair')) {
 		productName = 'chair_1_';
 	} else {
