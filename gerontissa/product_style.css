@@ -43,10 +43,10 @@ html {
 /*----header----*/
 
 #header_home {
-	position: relative;
+	justify-content: flex-start;
 }
-#header_list {
-    justify-content: flex-end;
+h1 {
+	margin-left: 5%;
 }
 
 /*----main----*/
@@ -151,7 +151,7 @@ html {
 .mini_image_container.focus_image {
 	opacity: 1;
 	border: 1px solid #555;
-	background-color: #36b5b0;
+	background-color: #6f9a8d;
 }
 .product_description_container {
 	display: block;
@@ -166,7 +166,6 @@ html {
 	color: #1d4d4f;
 	text-align: left;
 }
-.product_weight,
 .product_dimensions {
 	display: block;
 	font-size: .4rem;
@@ -175,11 +174,13 @@ html {
 	text-align: left;
 }
 .product_description {
+	border-top: 1px solid #1d4d4f;
 	display: block;
 	font-size: .3rem;
 	line-height: .4rem;
 	color: #1d4d4f;
 	text-align: left;
+	padding-top: .3rem;
 }
 
 /*----popup----*/
@@ -248,9 +249,6 @@ body.visible_popup #popup_container {
 }
 
 @media screen and (orientation:portrait) {
-	#header_list {
-		box-shadow: none;
-	}
 
 	/*----main----*/
 
@@ -332,11 +330,6 @@ body.visible_popup #popup_container {
 	display: block;
 	width: 100%;
 }
-.mini_image_container.focus_image {
-	opacity: 1;
-	border: 1px solid #555;
-	background-color: #36b5b0;
-}
 	.product_description_container {
 		width: 90%;
 	}
@@ -347,7 +340,6 @@ body.visible_popup #popup_container {
 		text-align: center;
 		margin-bottom: .5rem;
 	}
-	.product_weight,
 	.product_dimensions {
 		display: block;
 		font-size: .5rem;
@@ -357,30 +349,27 @@ body.visible_popup #popup_container {
 	}
 	.product_description {
 		width: 90%;
-		font-size: .4rem;
-		line-height: .5rem;
+		font-size: .6rem;
+		line-height: .8rem;
 	}
 
 /*----popup----*/
 
-#footer_home {
-		padding: 5%;
-		padding-bottom: 10%;
-	}
-	.contacts_title {
+	#popup_image_container {
 		width: 100%;
-		text-align: center;
-		font-size: .45rem;
-		line-height: .6rem;
-		color: #fff;
-		text-transform: uppercase;
+		-webkit-background-size: 60%;
+		background-size: 60%;
 	}
-	.contacts_item {
-		font-size: .32rem;
-		line-height: .7rem;
-		margin-top: .5rem;
+	.product_arrow {
+		height: 10%;
 	}
-	.contacts_link {
-		border-bottom: 4px solid #fff !important;
+	#product_arrow_left {
+		left: 5%;
+	}
+	#product_arrow_right {
+		right: 5%;
+	}
+	.close_popup {
+		width: 1rem;
 	}
 }
