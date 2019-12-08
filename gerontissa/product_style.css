@@ -176,10 +176,24 @@ h1 {
 .product_description {
 	border-top: 1px solid #1d4d4f;
 	display: block;
+	width: 90%;
 	font-size: .3rem;
 	line-height: .4rem;
 	color: #1d4d4f;
 	text-align: left;
+	padding-top: .3rem;
+	margin-top: .2rem;
+}
+.product_price {
+	display: block;
+	width: 90%;
+	font-size: .35rem;
+	line-height: .5rem;
+	color: #003f5c;
+	text-align:left;
+	margin-top: .3rem;
+	text-transform: uppercase;
+	border-top: 1px solid #1d4d4f;
 	padding-top: .3rem;
 }
 
