@@ -51,6 +51,9 @@ body.showing_menu {
 #back_to_top_container img  {
 	display: block;
 	width: 100%;
+	font-size: .3rem;
+	line-height: .4rem;
+	text-transform: uppercase;
 }
 .section_title {
 	display: block;
@@ -229,6 +232,8 @@ h1 {
 	bottom: 0;
 	right: 10%;
 	margin: auto 0;
+	font-size: .3rem;
+	line-height: .4rem;
 }
 
 @media screen and (orientation:portrait) {

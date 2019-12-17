@@ -147,6 +147,8 @@ h1 {
 .mini_image {
 	display: block;
 	width: 100%;
+	font-size: .4rem;
+	line-height: .5rem;
 }
 .mini_image_container.focus_image {
 	opacity: 1;
@@ -246,6 +248,8 @@ body.visible_popup #popup_container {
 	bottom: 0;
 	margin: auto 0;
 	cursor: pointer;
+	font-size: .4rem;
+	line-height: .5rem;
 }
 #product_arrow_left {
 	left: 1%;
@@ -260,6 +264,8 @@ body.visible_popup #popup_container {
 	top: 5%;
 	right: 5%;
 	cursor: pointer;
+	font-size: .4rem;
+	line-height: .5rem;
 }
 
 @media screen and (orientation:portrait) {

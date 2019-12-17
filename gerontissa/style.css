@@ -115,6 +115,8 @@ body {
 .product_image img {
 	display: block;
 	height: 100%;
+	font-size: .4rem;
+	line-height: .5rem;
 }
 .product_image:hover {
 	transform: scale(1.1);
@@ -577,6 +579,8 @@ body {
 	}
 	.production_arrow {
 		display: none;
+		font-size: .5rem;
+		line-height: .6rem;
 	}
 
 	/*----manufacture----*/
