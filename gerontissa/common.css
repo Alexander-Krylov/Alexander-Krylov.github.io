@@ -145,7 +145,8 @@ a.main_title_link {
 	color: #fff;
 	text-decoration: none;
 }
-h1 {
+.main_title_link h1,
+.header_title {
 	display: block;
 	color: #fff;
 	text-decoration: none;
