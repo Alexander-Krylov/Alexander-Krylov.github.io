@@ -107,7 +107,7 @@ function hideMenu() {
 }
 
 function stopper(event) {
-	preventDefault(event);
+	event.preventDefault();
 	event.stopPropagation();
 }
 

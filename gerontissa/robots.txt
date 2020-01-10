@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: http://геронтисса.рф/sitemap.xml
